@@ -6,7 +6,7 @@ import { GoogleGenAI } from "@google/genai";
 export const AIChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<{ role: 'user' | 'bot', text: string }[]>([
-    { role: 'bot', text: "Hi! I'm Ramzy's AI agent. Ask me anything about his skills, projects, or experience!" }
+    { role: 'bot', text: "Hi! I'm Azmil's AI agent. Ask me anything about his skills, projects, or experience!" }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -38,7 +38,7 @@ export const AIChat: React.FC = () => {
           - Expertise: React, Node.js, AWS, Cloud, Frontend Architecture.
           - Projects: Neural Stream (Analytics), Aura Market (E-commerce), Pulse Chat (WebRTC).
           - Personality: Professional, creative, focused on performance and scale.
-          Keep answers concise and professional. If you don't know something specific, invite them to contact Ramzy via the contact form.`,
+          Keep answers concise and professional. If you don't know something specific, invite them to contact Azmil via the contact form.`,
         },
       });
 
@@ -111,7 +111,7 @@ export const AIChat: React.FC = () => {
             <input 
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Ask about Ramzy..."
+              placeholder="Ask about Azmil..."
               className="flex-1 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-xl px-4 py-2 text-sm focus:ring-1 focus:ring-indigo-500 outline-none dark:text-white"
             />
             <button 
