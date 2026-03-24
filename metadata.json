@@ -1,0 +1,9 @@
+
+{
+  "name": "Azmil Ahamed - Software Engineer Portfolio",
+  "description": "A high-performance, modern, and interactive portfolio website for a senior software engineer featuring AI integration, dark mode, and smooth animations.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
