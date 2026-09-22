@@ -1,5 +1,8 @@
 
 import { Project, Skill, Education, ExpertiseCard } from './types';
+import lankaMemoImg from './assets/lankamemoholidays.png';
+import premiumPkgImg from './assets/premiumpackaging.png';
+import lankovaImg from './assets/lankova.png';
 
 export const EXPERTISE: ExpertiseCard[] = [
   {
@@ -36,6 +39,39 @@ export const SKILLS: Skill[] = [
 ];
 
 export const PROJECTS: Project[] = [
+  {
+    id: 'client-1',
+    title: 'LankaMemo Holidays — Sri Lanka Private Tour & Itinerary Platform',
+    description: 'A modern Sri Lankan tourism platform developed for a private tour operator, showcasing tour packages, destinations, customized travel experiences, private transportation services, customer reviews, galleries, and direct customer enquiry options.',
+    image: lankaMemoImg,
+    tags: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'React Router'],
+    liveUrl: 'https://lankamemoholidays.lk/',
+    category: 'frontend',
+    isClientProject: true,
+    projectCategory: 'Tourism / Travel Platform'
+  },
+  {
+    id: 'client-2',
+    title: 'Premium Packaging — Packaging Solutions & Product Showcase Website',
+    description: 'A professional business website developed for a Sri Lankan packaging company to showcase packaging products and services, organize products by category, and improve customer enquiries. Complete digital presence setup including SEO, Google Search Console, Google Analytics, and Google Business Profile.',
+    image: premiumPkgImg,
+    tags: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'React Router', 'Lucide React'],
+    liveUrl: 'https://premiumpackaging.lk/',
+    category: 'frontend',
+    isClientProject: true,
+    projectCategory: 'Corporate / Business Website'
+  },
+  {
+    id: 'client-3',
+    title: 'Lankova Travel & Tours — Sri Lanka Tours & Transportation Platform',
+    description: 'A responsive tourism website developed for a Sri Lankan travel agency offering private tours, customized holiday experiences, transportation services, airport transfers, tour packages, and direct customer enquiry options.',
+    image: lankovaImg,
+    tags: ['React', 'JavaScript', 'Vite', 'Tailwind CSS', 'React Router'],
+    liveUrl: 'https://lankova.lk/',
+    category: 'frontend',
+    isClientProject: true,
+    projectCategory: 'Tourism / Travel Platform'
+  },
   {
     id: '1',
     title: 'Neural Stream',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, MousePointer2 } from 'lucide-react';
+import { ArrowRight, Download, MousePointer2, Github } from 'lucide-react';
 import profileImg from '../assets/image.png'; 
 
 export const Hero: React.FC = () => {
@@ -42,6 +42,17 @@ export const Hero: React.FC = () => {
               >
                 View My Projects
                 <ArrowRight size={20} className="ml-2" />
+              </a>
+
+              <a
+                href="https://github.com/ramzyhafeel"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                className="inline-flex items-center px-6 py-3 rounded-full border-2 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-900 transition-colors"
+              >
+                <Github size={20} className="mr-2" />
+                GitHub
               </a>
 
               <button

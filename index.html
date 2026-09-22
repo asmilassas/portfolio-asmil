@@ -51,6 +51,14 @@
 <link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-white text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100">
+    <!-- Static Netlify Form for build-time detection -->
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

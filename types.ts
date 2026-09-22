@@ -5,9 +5,11 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
-  githubUrl: string;
+  githubUrl?: string;
   liveUrl?: string;
   category: 'frontend' | 'backend' | 'fullstack';
+  isClientProject?: boolean;
+  projectCategory?: string;
 }
 
 export interface Skill {

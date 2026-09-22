@@ -57,7 +57,7 @@ export const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
               {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
             </button>
             <div className="flex items-center space-x-4 ml-4 pl-4 border-l border-slate-200 dark:border-slate-800">
-              <a href="https://github.com/asmilassas" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
+              <a href="https://github.com/ramzyhafeel" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
                 <Github size={18} />
               </a>
               <a href="https://www.linkedin.com/in/asmilahamed/" target="_blank" rel="noreferrer" className="text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
