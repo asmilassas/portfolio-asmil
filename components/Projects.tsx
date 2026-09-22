@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ExternalLink, Github, Filter } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { PROJECTS } from '../constants.tsx';
 
 type Category = 'all' | 'frontend' | 'backend' | 'fullstack';
@@ -12,12 +12,19 @@ export const Projects: React.FC = () => {
     ? PROJECTS 
     : PROJECTS.filter(p => p.category === filter);
 
-  const categories: { label: string; value: Category }[] = [
-    { label: 'All Projects', value: 'all' },
-    { label: 'Frontend', value: 'frontend' },
-    { label: 'Backend', value: 'backend' },
-    { label: 'Full Stack', value: 'fullstack' },
-  ];
+  const availableCategories: Category[] = ['all', ...Array.from(new Set(PROJECTS.map(p => p.category)))];
+
+  const categoryLabels: Record<Category, string> = {
+    all: 'All Projects',
+    frontend: 'Frontend',
+    backend: 'Backend',
+    fullstack: 'Full Stack',
+  };
+
+  const categories = availableCategories.map(cat => ({
+    label: categoryLabels[cat] || cat,
+    value: cat
+  }));
 
   return (
     <section id="projects" className="py-24 bg-slate-50 dark:bg-slate-900/50">

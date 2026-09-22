@@ -71,45 +71,6 @@ export const PROJECTS: Project[] = [
     category: 'frontend',
     isClientProject: true,
     projectCategory: 'Tourism / Travel Platform'
-  },
-  {
-    id: '1',
-    title: 'Neural Stream',
-    description: 'A real-time analytics dashboard utilizing web workers for data processing and D3.js for visual rendering of complex neural networks.',
-    image: 'https://picsum.photos/seed/neural/800/600',
-    tags: ['React', 'D3.js', 'Socket.io', 'Node.js'],
-    githubUrl: '#',
-    liveUrl: '#',
-    category: 'fullstack'
-  },
-  {
-    id: '2',
-    title: 'Aura Market',
-    description: 'A minimalist e-commerce platform with a focus on buttery smooth transitions and seamless user experience.',
-    image: 'https://picsum.photos/seed/market/800/600',
-    tags: ['Next.js', 'Stripe', 'Tailwind', 'Prisma'],
-    githubUrl: '#',
-    liveUrl: '#',
-    category: 'frontend'
-  },
-  {
-    id: '3',
-    title: 'CloudSync CLI',
-    description: 'High-performance command line tool for multi-cloud file synchronization with end-to-end encryption.',
-    image: 'https://picsum.photos/seed/cli/800/600',
-    tags: ['Go', 'Cobra', 'AWS SDK', 'Docker'],
-    githubUrl: '#',
-    category: 'backend'
-  },
-  {
-    id: '4',
-    title: 'Pulse Chat',
-    description: 'Encrypted real-time messaging application with voice and video calling support using WebRTC.',
-    image: 'https://picsum.photos/seed/chat/800/600',
-    tags: ['React', 'WebRTC', 'Redis', 'Express'],
-    githubUrl: '#',
-    liveUrl: '#',
-    category: 'fullstack'
   }
 ];
 
